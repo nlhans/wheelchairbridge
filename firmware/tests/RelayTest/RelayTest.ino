@@ -70,6 +70,7 @@ void loop()
 
   // https://www.wolframalpha.com/input?i=%2833+%2B+20*x+%2F255%29+%2F++%2833+%2B+20+%2B+33%29+*12+%3D+y%2C+solve+for+x
   // (copy and paste into browser, Arduino IDE doesn't open this link properly)
+  // +16 = calibration value
   int outX = constrain(17/8.0* (43 * desiredXout - 198) + 16, 0, 255);
   int outY = constrain(17/8.0* (43 * desiredYout - 198) + 16, 0, 255);
   
